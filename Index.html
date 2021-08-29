@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container" id="main">
+            <div class="main">
+                <div class="userCredentials">
+                    <p style="text-align: center; font-weight: 500;">Personal Information</p>
+                    <div class="name">
+                        <input type="text"  id="name" placeholder="Your Name">
+                    </div>
+                    <div class="name">
+                        <input type="text"  id="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="name">
+                        <input type="text"  id="" placeholder="Your Email">
+                    </div>
+                    <div class="name">
+                        <label htmlFor="file" className="shareOption">
+                            <PermMedia htmlColor="tomato" className="shareIcon" />
+                            <span class="shareOptionText" style="cursor: pointer;">
+                                Your image
+                            </span>
+                            <input type="file" id="file" accept=".png,.jpeg,.jpg,.mp4" style="display: none;"> 
+                        </label>
+                    </div>
+                    <p style="text-align: center; font-weight: 500;">Important links</p>
+                    <div class="name">
+                        <input type="text"  id="" placeholder="Github">
+                    </div>
+                    <div class="name">
+                        <input type="text"  id="" placeholder="LinkedIn">
+                    </div>
+                    <div class="name">
+                        <input type="text"  id="" placeholder="Twitter">
+                    </div>
+                </div>
+                <div class="professionalInformation">
+                    <p style="text-align: center; font-weight: 500;">Professional Information</p>
+                    <div class="name">
+                        <textarea  id="" placeholder="Your Objectives"></textarea>
+                    </div>
+                    <div class="name" id="we">
+                        <textarea  id="" placeholder="Work Experience"></textarea>
+                        <div class="add" id="weAddbtn">
+                            <button onclick="addNewField()">add</button>
+                        </div>
+                    </div>
+                    <div class="name" id="us">
+                        <textarea  id="" placeholder="Education Qualification"></textarea>
+                        <div class="add" id="usAddBtn">
+                            <button onclick="addAccField()">add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn" onclick="generateCV()"> Generate CV</button>
+        </div>
+
+
+            <div class="content" id="content">
+                <!-- The Grid -->
+                <div class="left__side w-1/4 fle bg-blue-400 mx-2 shadow-2xl">
+                    <!-- Left Column -->
+                    <div class="">
+                        <div class="">
+                            <div class="img flex flex-col items-center relative ">
+                                <img src="../../images/images.jpeg" class="w-full h-80  object-cover user" alt="Avatar" />
+                                <div class="absolute bottom-0 left-0.5 font-medium text-5xl">
+                                    <h2 id="name1">Jane Doe</h2>
+                                </div>
+                            </div>
+                            <div class="left__side__container flex flex-col left-0.5">
+                                <p class="m-3"><i class=" fa fa-briefcase"></i>Designer
+                                </p>
+                                <p class="m-3">
+                                    <i class="fa fa-home "></i>London, UK
+                                </p>
+                                <p class="m-3">
+                                    <i class="
+                                fa fa-envelope 
+                              "></i>ex@mail.com
+                                </p>
+                                <p class="m-3">
+                                    <i class="
+                                fa fa-phone 
+                              "></i>1224435534
+                                </p>
+                                <hr />
+            
+                                <p class="skills"><b><i class="fa fa-asterisk "></i>Skills</b>
+                                </p>
+                                <p class="m-3">Adobe Photoshop</p>
+                                <div class="loaderbg">
+                                    <div class="loader">90%</div>
+                                </div>
+                                <p class="m-3">Photography</p>
+                                <div class="loaderbg">
+                                    <div class="loader1">80%</div>
+                                </div>
+                                <p class="m-3">Illustrator</p>
+                                <div class="loaderbg">
+                                    <div class="loader2">75%</div>
+                                </div>
+                                <p class="m-3">Media</p>
+                                <div class="loaderbg">
+                                    <div class="loader3">50%</div>
+                                </div>
+                            </div>
+                            <br />
+            
+                            <div class="languages">
+                                <p class="language"> <b><i class="fa fa-globe "></i>Languages</b></p>
+                                <p>English</p>
+                                <div class="loaderbg">
+                                    <div class="loader4"></div>
+                                </div>
+                                <p>Spanish</p>
+                                <div class="loaderbg">
+                                    <div class="loader5"></div>
+                                </div>
+                                <p>German</p>
+                                <div class="loaderbg">
+                                    <div class="loader6"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                <br />
+            
+                <!-- End Left Column -->
+            
+                <!-- Right Column -->
+                <div class="right__container bg-green-700 w-3/4 shadow-2xl">
+                    <div class="Work">
+                        <h2 class="title">
+                            <i class="
+                              fa fa-suitcase 
+                            "></i>Work Experience
+                        </h2>
+                        <div class="front__end">
+                            <h5 class="">
+                                <b class="domain">Front End Developer / w3schools.com</b>
+                            </h5>
+                            <h6 class="time">
+                                <i class="fa fa-calendar "></i>Jan 2015 -
+                                <span class="Current">Current</span>
+                            </h6>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel
+                                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                                soluta ea et odio, unde doloremque repellendus iure, iste.
+                            </p>
+                            <hr />
+                        </div>
+                        <div class="">
+                            <h5 class="domain"><b>Web Developer / something.com</b></h5>
+                            <h6 class="time">
+                                <i class="fa fa-calendar"></i>Mar 2012 -
+                                Dec 2014
+                            </h6>
+                            <p class="text">
+                                Consectetur adipisicing elit. Praesentium magnam consectetur vel
+                                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
+                                soluta ea et odio, unde doloremque repellendus iure, iste.
+                            </p>
+                            <hr />
+                        </div>
+                        <div class="">
+                            <h1 class="domain1"></h1>
+                            <h5 class="domain">
+                                <b class="">Graphic Designer / designsomething.com</b>
+                            </h5>
+                            <h6 class="time">
+                                <i class="fa fa-calendar"></i>Jun 2010 -
+                                Mar 2012
+                            </h6>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <br />
+                        </div>
+                    </div>
+            
+                    <div class="education">
+                        <h2 class="title">
+                            <i class="
+                              fa fa-certificate
+                            "></i>Education
+                        </h2>
+                        <div class="">
+                            <h5 class="domain"><b>W3Schools.com</b></h5>
+                            <h6 class="time">
+                                <i class="fa fa-calendar"></i>Forever
+                            </h6>
+                            <p class="text">Web Development! All I need to know in one place</p>
+                            <hr />
+                        </div>
+                        <h1 class="domain1"></h1>
+                        <div class="">
+                            <h5 class="domain"><b>London Business School</b></h5>
+                            <h6 class="time">
+                                <i class="fa fa-calendar"></i>2013 - 2015
+                            </h6>
+                            <p class="text">Master Degree</p>
+                            <hr />
+                        </div>
+                        <h1 class="domain1"></h1>
+                        <div class="">
+                            <h5 class="domain"><b>School of Coding</b></h5>
+                            <h6 class="time">
+                                <i class="fa fa-calendar"></i>2010 - 2013
+                            </h6>
+                            <p class="text">Bachelor Degree</p>
+                            <br />
+                        </div>
+                    </div>
+            
+                    <!-- End Right Column -->
+                </div>
+            
+                <!-- End Grid -->
+            </div>
+            </div>
+            
+            <!-- End Page Container -->
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
